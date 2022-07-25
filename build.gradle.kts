@@ -11,14 +11,9 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    testImplementation(kotlin("test"))
-}
-
-tasks.test {
-    useJUnitPlatform()
-}
-
-tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "18"
+subprojects {
+    apply(plugin = "org.jetbrains.kotlin.jvm")
+    tasks.withType<KotlinCompile> {
+        kotlinOptions.jvmTarget = "18"
+    }
 }
