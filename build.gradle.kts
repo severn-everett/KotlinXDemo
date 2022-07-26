@@ -23,8 +23,10 @@ repositories {
 }
 
 subprojects {
-    apply(plugin = "org.jetbrains.kotlin.jvm")
-    tasks.withType<KotlinCompile> {
-        kotlinOptions.jvmTarget = "18"
+    if (this.name != "HTML") {
+        apply(plugin = "org.jetbrains.kotlin.jvm")
+        tasks.withType<KotlinCompile> {
+            kotlinOptions.jvmTarget = "18"
+        }
     }
 }
