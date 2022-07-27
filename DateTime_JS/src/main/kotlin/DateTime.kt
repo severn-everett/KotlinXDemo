@@ -1,9 +1,14 @@
-package com.severett.datetime
-
 import kotlinx.datetime.Clock
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toInstant
 import kotlinx.datetime.toLocalDateTime
+
+@JsModule("@js-joda/timezone")
+@JsNonModule
+external object JsJodaTimeZoneModule
+
+@Suppress("unused")
+private val jsJodaTz = JsJodaTimeZoneModule
 
 fun main() {
     val beginningOfYear = "2022-01-01T00:00:00.000Z".toInstant()
