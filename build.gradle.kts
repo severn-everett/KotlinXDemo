@@ -12,7 +12,6 @@ buildscript {
 
 plugins {
     kotlin("jvm") version "1.7.10"
-
 }
 
 group = "com.severneverett"
@@ -23,7 +22,9 @@ repositories {
 }
 
 subprojects {
-    if (!this.name.endsWith("_JS")) {
+    if (this.name.endsWith("_JS")) {
+        apply(plugin = "org.jetbrains.kotlin.js")
+    } else {
         apply(plugin = "org.jetbrains.kotlin.jvm")
         tasks.withType<KotlinCompile> {
             kotlinOptions.jvmTarget = "18"

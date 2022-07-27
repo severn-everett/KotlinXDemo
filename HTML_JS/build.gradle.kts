@@ -1,7 +1,3 @@
-plugins {
-    kotlin("js")
-}
-
 group = "com.severneverett"
 version = "1.0-SNAPSHOT"
 
