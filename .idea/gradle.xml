@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/DateTime_JS" />
             <option value="$PROJECT_DIR$/HTML_JS" />
             <option value="$PROJECT_DIR$/Serialization" />
+            <option value="$PROJECT_DIR$/Serialization_JS" />
           </set>
         </option>
       </GradleProjectSettings>

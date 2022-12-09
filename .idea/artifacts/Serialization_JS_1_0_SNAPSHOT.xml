@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Serialization_JS-1.0-SNAPSHOT">
+    <output-path>$PROJECT_DIR$/Serialization_JS/build/libs</output-path>
+    <root id="archive" name="Serialization_JS-1.0-SNAPSHOT.jar">
+      <element id="module-output" name="KotlinXDemo.Serialization_JS.main" />
+    </root>
+  </artifact>
+</component>
