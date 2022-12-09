@@ -6,12 +6,12 @@ buildscript {
     }
 
     dependencies {
-        classpath("org.jetbrains.kotlinx:atomicfu-gradle-plugin:0.18.3")
+        classpath("org.jetbrains.kotlinx:atomicfu-gradle-plugin:0.18.5")
     }
 }
 
 plugins {
-    kotlin("jvm") version "1.7.10"
+    kotlin("jvm") version "1.7.21"
 }
 
 group = "com.severneverett"
