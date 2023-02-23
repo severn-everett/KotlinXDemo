@@ -1,6 +1,6 @@
 plugins {
-    kotlin("plugin.allopen") version "1.8.0"
-    id("org.jetbrains.kotlinx.benchmark") version "0.4.6"
+    kotlin("plugin.allopen") version "1.8.10"
+    id("org.jetbrains.kotlinx.benchmark") version "0.4.7"
 }
 
 apply(plugin = "org.jetbrains.kotlinx.benchmark")
@@ -17,7 +17,7 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlinx:kotlinx-benchmark-runtime-jvm:0.4.6")
+    implementation("org.jetbrains.kotlinx:kotlinx-benchmark-runtime-jvm:0.4.7")
 }
 
 benchmark {
