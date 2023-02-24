@@ -16,6 +16,8 @@ dependencies {
 tasks.getByName<Test>("test") {
     useJUnitPlatform()
     jvmArgs = listOf(
+        // Arguments that are required for working with classes from
+        // the java.util package
         "--add-opens",
         "java.base/jdk.internal.misc=ALL-UNNAMED",
         "--add-exports",
