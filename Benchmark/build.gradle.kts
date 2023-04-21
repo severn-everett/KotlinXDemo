@@ -22,6 +22,6 @@ dependencies {
 
 benchmark {
     targets {
-        register("main")
+        register("test")
     }
 }
