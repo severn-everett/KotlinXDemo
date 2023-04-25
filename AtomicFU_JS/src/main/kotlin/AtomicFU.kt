@@ -22,5 +22,6 @@ class Foo {
 }
 
 suspend fun main() {
-    Foo().runRace()
+    val foo = Foo()
+    foo.runRace()
 }
