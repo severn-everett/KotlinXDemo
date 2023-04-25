@@ -1,5 +1,5 @@
 plugins {
-    kotlin("plugin.allopen") version "1.8.10"
+    kotlin("plugin.allopen") version "1.8.20"
     id("org.jetbrains.kotlinx.benchmark") version "0.4.7"
 }
 
