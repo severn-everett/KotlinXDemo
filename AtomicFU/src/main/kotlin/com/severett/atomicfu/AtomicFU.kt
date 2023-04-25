@@ -5,12 +5,14 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
+private const val LIMIT = 10_000
+
 class Foo {
     private val safeCounter = atomic(0)
     private var unsafeCounter = 0
 
-    suspend fun run() {
-        (0 until 1000).map {
+    suspend fun runRace() {
+        (0 until LIMIT).map {
             CoroutineScope(Dispatchers.Default).launch {
                 safeCounter += 1
                 unsafeCounter += 1
@@ -22,5 +24,5 @@ class Foo {
 }
 
 suspend fun main() {
-    Foo().run()
+    Foo().runRace()
 }
