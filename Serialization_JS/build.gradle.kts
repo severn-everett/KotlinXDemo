@@ -1,5 +1,5 @@
 plugins {
-    kotlin("plugin.serialization") version "1.8.20"
+    kotlin("plugin.serialization") version "1.9.24"
 }
 
 group = "com.severneverett"

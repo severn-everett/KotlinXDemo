@@ -6,7 +6,7 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlinx:kotlinx-html-js:0.8.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-html-js:0.11.0")
 }
 
 kotlin {

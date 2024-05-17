@@ -1,4 +1,4 @@
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_19
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 buildscript {
@@ -7,12 +7,12 @@ buildscript {
     }
 
     dependencies {
-        classpath("org.jetbrains.kotlinx:atomicfu-gradle-plugin:0.20.2")
+        classpath("org.jetbrains.kotlinx:atomicfu-gradle-plugin:0.24.0")
     }
 }
 
 plugins {
-    kotlin("jvm") version "1.8.20"
+    kotlin("jvm") version "1.9.24"
 }
 
 group = "com.severneverett"
@@ -29,7 +29,7 @@ subprojects {
         apply(plugin = "org.jetbrains.kotlin.jvm")
         tasks.withType<KotlinCompile> {
             compilerOptions {
-                jvmTarget.set(JVM_19)
+                jvmTarget.set(JVM_21)
             }
         }
     }

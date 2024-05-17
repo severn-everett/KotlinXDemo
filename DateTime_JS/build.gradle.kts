@@ -6,8 +6,8 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.0")
-    implementation(npm("@js-joda/timezone", "2.12.0"))
+    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.0")
+    implementation(npm("@js-joda/timezone", "2.21.0"))
 }
 
 kotlin {

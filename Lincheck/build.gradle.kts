@@ -7,8 +7,8 @@ repositories {
 
 dependencies {
     val junitVersion: String by project
-    testImplementation("org.jctools:jctools-core:4.0.1")
-    testImplementation("org.jetbrains.kotlinx:lincheck:2.17")
+    testImplementation("org.jctools:jctools-core:4.0.3")
+    testImplementation("org.jetbrains.kotlinx:lincheck:2.32")
     testImplementation("org.junit.jupiter:junit-jupiter-api:$junitVersion")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitVersion")
 }
