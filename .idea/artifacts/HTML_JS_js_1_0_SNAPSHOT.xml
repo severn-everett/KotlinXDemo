@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="HTML_JS-js-1.0-SNAPSHOT">
+    <output-path>$PROJECT_DIR$/HTML_JS/build/libs</output-path>
+    <root id="archive" name="HTML_JS-js-1.0-SNAPSHOT.jar">
+      <element id="module-output" name="KotlinXDemo.HTML_JS.jsMain" />
+    </root>
+  </artifact>
+</component>

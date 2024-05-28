@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DateTime_JS-js-1.0-SNAPSHOT">
+    <output-path>$PROJECT_DIR$/DateTime_JS/build/libs</output-path>
+    <root id="archive" name="DateTime_JS-js-1.0-SNAPSHOT.jar">
+      <element id="module-output" name="KotlinXDemo.DateTime_JS.jsMain" />
+    </root>
+  </artifact>
+</component>
