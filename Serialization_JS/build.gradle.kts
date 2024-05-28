@@ -9,14 +9,18 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    val serializationVersion: String by project
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$serializationVersion")
-}
-
 kotlin {
     js(IR) {
         binaries.executable()
         nodejs { }
+    }
+
+    sourceSets {
+        val jsMain by getting {
+            dependencies {
+                val serializationVersion: String by project
+                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$serializationVersion")
+            }
+        }
     }
 }

@@ -1,4 +1,4 @@
-package serde
+package serde.serde
 
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.builtins.ListSerializer

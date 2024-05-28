@@ -5,10 +5,6 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    implementation("org.jetbrains.kotlinx:kotlinx-html-js:0.11.0")
-}
-
 kotlin {
     js(IR) {
         binaries.executable()
@@ -17,6 +13,14 @@ kotlin {
                 cssSupport {
                     enabled.set(true)
                 }
+            }
+        }
+    }
+
+    sourceSets {
+        val jsMain by getting {
+            dependencies {
+                implementation("org.jetbrains.kotlinx:kotlinx-html:0.11.0")
             }
         }
     }

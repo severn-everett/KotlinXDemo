@@ -1,9 +1,10 @@
-import kotlinx.serialization.decodeFromString
+package serde
+
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 import model.Foo
 import model.ThirdPartyFoo
-import serde.ThirdPartyFooSerializer
+import serde.serde.ThirdPartyFooSerializer
 
 private val fizz = "FUZZ"
 private val bazz = listOf("BIZZ", "BUZZ")
